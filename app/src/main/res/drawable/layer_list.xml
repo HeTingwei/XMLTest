@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--第一层（最下层），在shape中定义形状颜色-->
+    <item
+        android:width="100dp"
+        android:height="100dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+
+    <!--第二层，在第一层上，在item属性中定义图形-->
+    <item
+        android:width="80dp"
+        android:height="80dp"
+        android:drawable="@color/colorPrimaryDark"
+        android:gravity="center"/>
+
+    <!--使用图片-->
+    <item
+        android:width="50dp"
+        android:height="50dp"
+        android:drawable="@drawable/ic_launcher"
+        android:gravity="center"
+        android:top="20dp"/>
+
+</layer-list>
