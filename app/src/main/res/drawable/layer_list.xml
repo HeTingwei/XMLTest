@@ -26,4 +26,21 @@
         android:gravity="center"
         android:top="20dp"/>
 
+ <!--倾斜的图片-->
+    <item
+        android:left="40dp"
+        android:width="20dp"
+        android:height="30dp">
+        <rotate
+            android:fromDegrees="20"
+            android:pivotX="0"
+            android:pivotY="0">
+            <shape>
+                <solid android:color="@android:color/black"/>
+            </shape>
+        </rotate>
+
+
+    </item>
+
 </layer-list>
